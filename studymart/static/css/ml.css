@@ -1,0 +1,15 @@
+p {
+    /* direction: rtl; */
+    text-align: justify;
+    /* text-align: center; */
+    /* text-align: right; */
+    letter-spacing: 2px;
+    word-spacing: 6px;
+    line-height: 3.5;
+    /* text-decoration: underline overline; */
+    text-decoration-color: blue;
+    /* text-decoration-line: line-through; */
+    text-indent: 50px;
+    text-shadow: 3px 5px 4px rgba(0,0,0,0.5);
+    text-transform: lowercase;
+}
