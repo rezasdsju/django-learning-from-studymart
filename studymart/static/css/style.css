@@ -1,0 +1,14 @@
+body {
+    background-color: aqua;
+}
+p {
+    color: red;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+
+img {
+    height: 400px;
+    width: 600px;
+}
