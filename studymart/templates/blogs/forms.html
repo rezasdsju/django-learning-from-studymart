@@ -7,9 +7,15 @@
 </head>
 <body>
     <form action="">
-        <table>
-            {{form}}
-        </table>
+        {% for field in form %}
+        {{field.label_tag}} <br>
+        {% endfor %}
+
+        {{form.first_name.label_tag}} <br>
+        {{form.last_name.label_tag}} <br>
+        {{form.email.label_tag}} <br> <br>
+
+        {{form.as_p}} <br> <br>
         <input type="button" value="Submit">
     </form>
 </body>
