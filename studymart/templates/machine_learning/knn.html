@@ -1,33 +1,4 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/k.css' %}">
-    <title>KNN</title>
-</head>
-<body>
-    <h1>K- Nearest Neighbour</h1>
-    <table width="500" border="2px" align="center">
-        <tr class="thead">
-            <th>Teacher's Name</th>
-            <th>Course Name</th>
-            <th>Class</th>
-            <th>Course Duration</th>
-        </tr>
-        <tr align="center" class="shakil">
-            <td>Sakil</td>
-            <td>ML</td>
-            <td>21</td>
-            <td>2.5 Months</td>
-        </tr>
-        <tr align="center" class="mejba">
-            <td>Mejba</td>
-            <td>DL</td>
-            <td>21</td>
-            <td>2.5 Months</td>
-        </tr>
-    </table>
-</body>
-</html>
+{% extends 'common_code/base.html' %}
+{% block title %} KNN {% endblock title %}
+
+{% block alert %} This is KNN page {% endblock alert %}

@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogs</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
-</head>
-<body>
-    <p>This is our first blog</p>
-    <img src="{% static  'images/footer-logo.png' %}" alt="Footer LOGO">
-</body>
-</html>
+{% extends 'common_code/base.html' %}
+{% block title %} Blogs {% endblock title %}
+
+{% block alert %} This is block page {% endblock alert %}

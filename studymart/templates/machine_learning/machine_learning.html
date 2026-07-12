@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/ml.css' %}">
-    <title>ML</title>
-</head>
-<body>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos corrupti ratione provident alias consectetur aspernatur pariatur? Doloremque nemo nesciunt, adipisci dolorum ullam cum nulla magnam reiciendis autem corporis quidem quae praesentium voluptatem eveniet fugit ad quam. Corrupti, similique quas voluptas placeat nulla illo exercitationem unde molestiae eveniet dolorem assumenda voluptates!</p>
-</body>
-</html>
+{% extends 'common_code/base.html' %}
+{% block title %} Machine Learning {% endblock title %}
+
+{% block alert %} This is Machine Learning page {% endblock alert %}

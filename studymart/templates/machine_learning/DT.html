@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decesion Tree</title>
-    <link rel="stylesheet" href="{% static 'css/style1.css' %}"/>
-</head>
-<body>
-    <div class="margin">
-        <div class="padding">
-            <p>Studymart</p>
-        </div>
+{% extends 'common_code/base.html' %}
+{% block title %} DT {% endblock title %}
 
-
-    </div>
-        <div class="border">
-
-        </div>
-</body>
-</html>
+{% block alert %} This is DT page {% endblock alert %}

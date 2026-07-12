@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers</title>
+    <link rel="stylesheet" href="{% static 'css/t.css' %}">
+</head>
+<body>
+    <h1>{{thr}}</h1>
+    {% if thr %}
+    <h1>Teacher Information</h1>
+    {% else %}
+    <h2>Empty Database</h2>
+    {% endif %}
+    <table>
+        <tr>
+        <th>ID</th>
+        <th>TID</th>
+        <th>Tname</th>
+        <th>Temail</th>            
+        </tr>
+
+        {% for th in thr %}
+        <tr>
+            <td>{{th.id}}</td>
+            <td>{{th.tid}}</td>
+            <td>{{th.tname}}</td>
+            <td>{{th.temail}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

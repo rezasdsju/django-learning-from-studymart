@@ -1,37 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RF</title>
-</head>
-<body>
-    <h3>Random Forest</h3>
-    <form action="">
-        <input type="text" name="" id="" placeholder="Enter Your Name">
-        <br><br>
-        <input type="email" name="" id="" value="reza@gmail.com" placeholder="Enter Your Email" readonly>
-        <br><br>
-        <input type="password" name="" id="" placeholder="Enter your password">
-        <input type="radio" name="gender" id="">Male
-        <input type="radio" name="gender" id="">Female
-        <input type="radio" name="gender" id="">Others
-        <br><br>
-        <input type="radio" name="" id="">Male
-        <input type="radio" name="" id="">Female
-        <input type="radio" name="" id="">Others
-        <br><br>
+{% extends 'common_code/base.html' %}
+{% block title %} Random Forest {% endblock title %}
 
-        <input type="checkbox" name="" id="">ML <br><br>
-        <input type="checkbox" name="" id="">DL <br><br>
-        <input type="checkbox" name="" id="">DA<br><br>
-        <input type="checkbox" name="" id="">DJ<br><br>
-
-        <input type="file" name="" id="">
-        <br><br>
-        <input type="datetime-local" name="" id="">
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
-    </form>
-</body>
-</html>
+{% block alert %} This is Random Forest page {% endblock alert %}
