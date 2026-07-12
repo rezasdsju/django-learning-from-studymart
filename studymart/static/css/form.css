@@ -1,0 +1,20 @@
+form {
+    border: 5px solid blue;
+}
+
+label {
+    font-size: 25px;
+    color: brown;
+}
+
+input {
+    height: 20px;
+    width: 200px;
+    background-color: violet;
+    color: beige;
+    font-weight: 900;
+}
+
+#id_textarea {
+    background-color: skyblue;
+}

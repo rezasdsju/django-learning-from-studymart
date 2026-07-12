@@ -1,0 +1,4 @@
+-- database: ./db.sqlite3
+
+SELECT * FROM About_Us_teachers
+ORDER BY `tid` ASC;

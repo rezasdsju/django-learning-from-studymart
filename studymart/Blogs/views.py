@@ -10,6 +10,18 @@ def blog1(request):
 
 
 def showformsdata(request):
-    fm = TeachersRegistration()
-    #fm.order_fields(field_order=['email', 'last_name', 'first_name'])
+    if request.method == 'POST':
+        fm = TeachersRegistration(request.POST)
+        if fm.is_valid():
+            print(fm.cleaned_data['password'])
+            print(fm.cleaned_data['repassword'])
+            
+            #print(fm)
+            #print('This is post statement')
+        
+        #fm.order_fields(field_order=['email', 'last_name', 'first_name'])
+    
+    else:
+        fm = TeachersRegistration()
+        print('This is a Get statement')
     return render(request, 'blogs/forms.html', {'form': fm})
